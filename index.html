@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Literacy for Elders</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/04/24/17/20250424173315-4Y4NUUVZ.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Digital Guruji</h1>
+    <select id="languageSwitcher" onchange="switchLanguage()">
+      <option value="en" selected>English</option>
+      <option value="hi">हिंदी</option>
+      <option value="bn">বাংলা</option>
+      <option value="te">తెలుగు</option>
+    </select>
+  </div>
+
+  <div class="main">
+    <div class="buttons">
+      <button onclick="showTips('quick')" id="btnQuick">Quick Tech Tips</button>
+      <button onclick="showTips('basic')" id="btnBasic">Learn Basics</button>
+      <button onclick="showTips('help')" id="btnHelp">Get Help</button>
+    </div>
+    <div class="poster">
+      <img src="CollegeTips_Poster.jpg" alt="Poster" />
+    </div>
+  </div>
+
+  <div id="tipsSection"></div>
+
+  <footer>
+    <p>&copy; 2025 CollegeTips. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/04/24/17/20250424173315-4Y4NUUVZ.js"></script>
+</body>
+</html>
