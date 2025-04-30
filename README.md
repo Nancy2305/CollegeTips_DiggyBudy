@@ -27,3 +27,4 @@ o	The chatbot functionality is powered by Botpress, a platform that facilitates 
 o	The content for each section (Quick Tips, Learn Basics, Help) is available in multiple languages, and JavaScript handles content switching based on the user's selected language.
 Conclusion: "Digital Guruji" is a user-centric platform that empowers elderly people to learn about digital technologies at their own pace. With its multi-language support, simple navigation, and accessible features, it provides a great learning experience for those new to the digital world.
 
+# Click here to use it # https://diggybuddychatbot.netlify.app/#
