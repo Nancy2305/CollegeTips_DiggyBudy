@@ -137,11 +137,26 @@ function switchLanguage() {
   const section = document.querySelector("#tipsSection h2");
   if (section) {
     const id = section.textContent.toLowerCase().includes("quick") ? 'quick'
-                 : section.textContent.toLowerCase().includes("basic") ? 'basic'
+                 : section.textContesnt.toLowerCase().includes("basic") ? 'basic'
                  : 'help';
     showTips(id);
   }
   updateStaticContent();
 }
+
+document.getElementById('feedback-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (name && email && message) {
+    document.getElementById('feedback-response').textContent = "Thank you for your feedback!";
+    this.reset();
+  } else {
+    document.getElementById('feedback-response').textContent = "Please fill in all fields.";
+  }
+});
+
 
 window.onload = updateStaticContent;

@@ -173,3 +173,44 @@ body {
     background-color: #e68a00;
   }
   
+  .feedback-section {
+    background-color: #fff8dc;
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+  }
+  
+  .feedback-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #feedback-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #feedback-form input,
+  #feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  #feedback-form button {
+    background-color: #f19a0c;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #feedback-form button:hover {
+    background-color: #0056b3;
+  }
+  
