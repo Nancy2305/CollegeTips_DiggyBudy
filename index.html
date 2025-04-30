@@ -11,7 +11,16 @@
 </head>
 <body>
   <div class="header">
-    <h1>Empowering Digital Literacy!</h1>
+    <h1>Digital Guruji</h1>
+    <div class="navbar">
+      <ul>
+        <li><a href="#" id="homeLink">Home</a></li>
+        <li><a href="#" id="tutorialsLink">Tutorials</a></li>
+        <li><a href="#">AI Chat</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+      
+    </div>
     <select id="languageSwitcher" onchange="switchLanguage()">
       <option value="en" selected>English</option>
       <option value="hi">हिंदी</option>
@@ -19,6 +28,7 @@
       <option value="te">తెలుగు</option>
     </select>
   </div>
+  
 
   <div class="main">
     <div class="buttons">
@@ -33,10 +43,67 @@
 
   <div id="tipsSection"></div>
 
+  <!-- Tutorials Section -->
+  <section id="tutorialsSection" class="projects section" style="display: none;">
+    <h2 class="section-title">Tutorials</h2>
+    <div class="projects__container">
+      <!-- WhatsApp Card -->
+      <div class="card" onclick="showTutorial('whatsapp')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        <h3>WhatsApp</h3>
+      </div>
+  
+      <!-- Paytm Card -->
+      <div class="card" onclick="showTutorial('paytm')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Paytm_logo.png" alt="Paytm" />
+        <h3>Paytm</h3>
+      </div>
+  
+      <!-- Google Maps Card -->
+      <div class="card" onclick="showTutorial('maps')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Maps_icon.svg" alt="Maps" />
+        <h3>Google Maps</h3>
+      </div>
+    </div>
+  
+    <!-- Tutorial Content -->
+    <div id="tutorialDetails" style="display: none; margin-top: 2rem;">
+      <h3 id="tutorialTitle"></h3>
+      <p id="tutorialUse"></p>
+      <ol id="tutorialSteps"></ol>
+      <button onclick="goBackToCards()">⬅ Back to Tutorials</button>
+    </div>
+  </section>
+  
+
+
   <footer>
     <p>&copy; 2025 CollegeTips. All rights reserved.</p>
   </footer>
 
+  <script>
+    const homeLink = document.getElementById('homeLink');
+    const tutorialsLink = document.getElementById('tutorialsLink');
+    const mainSection = document.querySelector('.main');
+    const tipsSection = document.getElementById('tipsSection');
+    const tutorialsSection = document.getElementById('tutorialsSection');
+  
+    homeLink.addEventListener('click', () => {
+      mainSection.style.display = 'flex';
+      tipsSection.style.display = 'block';
+      tutorialsSection.style.display = 'none';
+    });
+  
+    tutorialsLink.addEventListener('click', () => {
+      mainSection.style.display = 'none';
+      tipsSection.style.display = 'none';
+      tutorialsSection.style.display = 'block';
+    });
+  </script>
+
+
+
+  
   <script src="script.js"></script>
   <script src="https://files.bpcontent.cloud/2025/04/24/17/20250424173315-4Y4NUUVZ.js"></script>
 </body>
